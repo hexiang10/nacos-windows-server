@@ -1,5 +1,8 @@
 # Windows安装nacos服务
 
+> nacos下载地址：[Nacos 官网](https://nacos.io/download/release-history/)
+> 
+> 使用要求：nacos版本< v2.4.0
 
 
 ## 1. 导入数据
