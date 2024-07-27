@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<service>
+		  <!-- 指定在Windows系统内部使用的识别服务的ID。在系统中安装的所有服务中，这必须是唯一的，它应该完全由字母数字字符组成 -->
+		  <id>nacos</id>
+		  <!-- 服务的简短名称，它可以包含空格和其他字符。尽量简短，就像“id”一样，在系统的所有服务名称中，也要保持唯一 -->
+		  <name>nacos</name>
+		  <!-- 该服务可读描述。当选中该服务时，它将显示在Windows服务管理器中 -->
+		  <description>nacos server</description>
+		  <!-- 该元素指定要启动的可执行文件 -->
+		  <executable>%BASE%\startup.cmd</executable>
+		  <stopexecutable>%BASE%\shutdown.cmd</stopexecutable>
+		  <!-- 单机模式 -->
+		  <!-- <arguments>-m standalone</arguments> -->
+		  <!-- 日志输出位置 -->
+		  <logpath>%BASE%\logs</logpath>
+		  <logmode>roll</logmode>
+	</service>
